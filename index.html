@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Spotify - Web Player : Music for everyone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
@@ -26,7 +27,10 @@
                     <img class="invert" src="img/playlist.svg" alt="Icon for playlist">
                     <h2>Your Library</h2>
                 </div>
-
+                <div class="songsList">
+                    <ul>
+                    </ul>
+                </div>
                 <div class="footer">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
                     <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
@@ -77,19 +81,25 @@
             </div>
 
             <div class="playBar">
-                <div class="songInfo">
 
+                <div class="seekBar">
+                    <div class="circle">
+                        
+                    </div>
                 </div>
-                <div class="songButtons">
-                    <img src="img/prevsong.svg" alt="previous button icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="30" height="30">
-                        <circle cx="14" cy="14" r="13" fill="none" stroke="#141B34" />
-                        <path d="M18.3906 14.846C18.0371 16.189 16.3667 17.138 13.0257 19.0361C9.796 20.8709 8.1812 21.7884 6.87983 21.4196C6.3418 21.2671 5.85159 20.9776 5.45624 20.5787C4.5 19.6139 4.5 17.7426 4.5 14C4.5 10.2574 4.5 8.3861 5.45624 7.42132C5.85159 7.02245 6.3418 6.73288 6.87983 6.58042C8.1812 6.21165 9.796 7.12907 13.0257 8.96393C16.3667 10.86197 18.0371 11.811 18.3906 13.154C18.5365 13.7084 18.5365 14.2916 18.3906 14.846Z" transform="scale(0.6) translate(12,9)" fill="none" stroke="#141B34" stroke-width="1.5" stroke-linejoin="miter"/>
-                    </svg>
-                    <img src="img/nextsong.svg" alt="next button icon">
-                </div>
-                <div class="songTime">
 
+                <div class="aboveBar">
+                    <div class="songInfo">
+
+                    </div>
+                    <div class="songButtons">
+                        <img class="cp " id="previous" src="img/prevsong.svg" alt="previous button icon">
+                        <img class="cp " id="play" src="img/play.svg" alt="previous button icon">
+                        <img class="cp" id="next" src="img/nextsong.svg" alt="next button icon">
+                    </div>
+                    <div class="songTime">
+    
+                    </div>
                 </div>
             </div>
         </div>
