@@ -1,3 +1,4 @@
+
 console.log("Lets start writting some javascript");
 let currentSong = new Audio();
 let songs;
